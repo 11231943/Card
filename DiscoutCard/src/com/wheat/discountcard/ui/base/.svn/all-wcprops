@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/Card/!svn/ver/31/DiscoutCard/src/com/wheat/discountcard/ui/base
+END
+BRBaseActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/Card/!svn/ver/31/DiscoutCard/src/com/wheat/discountcard/ui/base/BRBaseActivity.java
+END
+BaseFragmentActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/Card/!svn/ver/31/DiscoutCard/src/com/wheat/discountcard/ui/base/BaseFragmentActivity.java
+END
+LibsBaseFragmentActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/Card/!svn/ver/31/DiscoutCard/src/com/wheat/discountcard/ui/base/LibsBaseFragmentActivity.java
+END
+TPBaseFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/Card/!svn/ver/31/DiscoutCard/src/com/wheat/discountcard/ui/base/TPBaseFragment.java
+END
+LSBBaseFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/Card/!svn/ver/31/DiscoutCard/src/com/wheat/discountcard/ui/base/LSBBaseFragment.java
+END
+TPBaseActivityGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/Card/!svn/ver/31/DiscoutCard/src/com/wheat/discountcard/ui/base/TPBaseActivityGroup.java
+END

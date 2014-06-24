@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backguound" >
+
+    <RelativeLayout
+        android:id="@+id/title_ry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/title_top_bar" />
+    </RelativeLayout>
+
+    <com.wheat.discountcard.ui.widget.LogoScrollView
+        android:id="@+id/viewflipper_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_ry"
+        android:focusable="false"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ViewFlipper
+                android:id="@+id/mViewFliper_vf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/default_pic_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dip"
+                        android:background="@drawable/default_pic_1" />
+                </LinearLayout>
+
+                <LinearLayout
+                     android:id="@+id/default_pic_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dip"
+                        android:background="@drawable/default_pic_2" />
+                </LinearLayout>
+
+                <LinearLayout
+                     android:id="@+id/default_pic_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dip"
+                        android:background="@drawable/default_pic_3" />
+                </LinearLayout>
+
+                <LinearLayout
+                     android:id="@+id/default_pic_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dip"
+                        android:background="@drawable/default_pic_4" />
+                </LinearLayout>
+            </ViewFlipper>
+
+            <RelativeLayout
+                android:id="@+id/hot_discount"
+                android:layout_width="fill_parent"
+                android:layout_height="35dip"
+                android:layout_below="@+id/mViewFliper_vf"
+                android:layout_marginTop="2dip"
+                android:background="@drawable/list_itmes_li_p"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:gravity="center_vertical"
+                    android:text="热门推荐优惠劵"
+                    android:textColor="#844D15"
+                    android:textSize="16.0dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/more_arrow"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/home_gridview_layou"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hot_discount"
+                android:layout_marginTop="2dip"
+                android:orientation="vertical" >
+
+                <GridView
+                    android:id="@+id/home_gridview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:listSelector="@drawable/list_item_bg"
+                    android:numColumns="4"
+                    android:verticalSpacing="10dip" >
+                </GridView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/te_layou"
+                android:layout_width="fill_parent"
+                android:layout_height="35dip"
+                android:layout_below="@+id/home_gridview_layou"
+                android:layout_marginTop="2dip"
+                android:background="@drawable/list_itmes_li_p"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:gravity="center_vertical"
+                    android:text="特色区域"
+                    android:textColor="#844D15"
+                    android:textSize="16.0dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/more_arrow"
+                    android:visibility="gone" />
+            </RelativeLayout>
+            
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/te_layou" >
+
+                <include layout="@layout/home_select_list_layout" />
+            </LinearLayout>
+            
+        </RelativeLayout>
+    </com.wheat.discountcard.ui.widget.LogoScrollView>
+
+</RelativeLayout>

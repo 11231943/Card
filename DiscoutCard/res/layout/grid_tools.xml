@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/grid_tools_item_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="110.0dip"
+    android:background="@drawable/exp_bg_selector"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="110.0dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/id_area_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/wtt1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+              >
+
+            <TextView
+                android:id="@+id/id_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lines="1"
+                android:text="优惠卡"
+                android:textColor="#323232"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/id_area_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lines="1"
+                android:text="尽情来吐槽吧！"
+                android:textColor="#f93b20"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

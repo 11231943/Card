@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backguound" >
+
+    <RelativeLayout
+        android:id="@+id/title_ry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/title_top_bar" />
+    </RelativeLayout>
+
+    <com.wheat.discountcard.ui.widget.LogoScrollView
+        android:id="@+id/viewflipper_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_ry"
+        android:focusable="false"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ViewFlipper
+                android:id="@+id/mViewFliper_vf"
+                android:layout_width="match_parent"
+                android:layout_height="150dip" >
+
+                <LinearLayout
+                    android:id="@+id/default_pic_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dip"
+                        android:background="@drawable/default_pic_1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/default_pic_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dip"
+                        android:background="@drawable/default_pic_2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/default_pic_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dip"
+                        android:background="@drawable/default_pic_3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/default_pic_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dip"
+                        android:background="@drawable/default_pic_4" />
+                </LinearLayout>
+            </ViewFlipper>
+
+            <LinearLayout
+                android:id="@+id/home_date_ratio_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mViewFliper_vf" >
+
+                <include layout="@layout/home_data_bar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_date_ratio_ly"
+                android:orientation="vertical" >
+
+                <com.wheat.discountcard.ui.widget.MricoGridView
+                    android:id="@+id/mygrid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffc6c6c6"
+                    android:cacheColorHint="#00000000"
+                    android:listSelector="#00000000"
+                    android:numColumns="2"
+                    android:scrollbars="none" />
+            </LinearLayout>
+        </RelativeLayout>
+    </com.wheat.discountcard.ui.widget.LogoScrollView>
+
+</RelativeLayout>

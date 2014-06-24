@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dip"
+    android:gravity="center_vertical" >
+
+    <LinearLayout
+        android:id="@+id/show_card"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:layout_toLeftOf="@+id/yhj_itme_imges"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/card_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:hint="廖氏川菜(8家分店)"
+            android:lines="1"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/card_summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:gravity="center_vertical"
+            android:hint="会员专享8.8折"
+            android:lines="1"
+            android:singleLine="true"
+            android:textColor="#ed6447"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/card_taste"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:hint="多商区 川菜"
+            android:lines="1"
+            android:paddingRight="70dip"
+            android:singleLine="true"
+            android:textColor="#797979"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/yhj_itme_imges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/mc_addvip" />
+    
+    <TextView
+            android:id="@+id/card_jl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:lines="1"
+            android:singleLine="true"
+            android:textColor="#797979"
+            android:textSize="16dp" />
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layou"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/tools_bar"
+        layout="@layout/title_bar" />
+
+    <include
+        android:id="@+id/card_tools"
+        layout="@layout/card_list_tools" />
+
+    <FrameLayout
+        android:id="@+id/mContent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <cn.wheat.libs.widget.MMListView
+            android:id="@+id/nc_class_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:divider="#e6e6e6"
+            android:dividerHeight="1px"
+            android:listSelector="@drawable/list_item_content_selector" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#e6e6e6" />
+		 <TextView 
+            android:id="@+id/no_data"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textColor="#000"
+             android:visibility="gone"
+            android:textSize="20.0dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="未搜索到会员卡"
+            
+            />
+    </FrameLayout>
+
+</LinearLayout>

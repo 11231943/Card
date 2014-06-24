@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DiscoutCard</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="tab_home">主页</string>
+    <string name="tab_micro_note">微帖</string>
+    <string name="tab_account">我的</string>
+    <string name="tab_set">设置</string>
+    <string name="tab_list_1">附      近</string>
+    <string name="tab_list_2">会员卡</string>
+    <string name="tab_list_3">优惠劵</string>
+    <string name="tab_list_4">免费专区</string>
+    <string name="tab_list_5">超     市</string>
+    <string name="tab_listc_con_1">查找你身边的优惠</string>
+    <string name="tab_listc_con_2">随时随地尊享Vip特价</string>
+    <string name="tab_listc_con_3">免费使用,团购一样的优惠</string>
+    <string name="tab_listc_con_4">提供最近的免费活动!</string>
+
+    <!-- 标题栏 -->
+    <string name="new_title">附近</string>
+    <string name="card_title">会员卡</string>
+    <string name="about_copyright">我是会员 &#160;|&#160;移动互联网O2O领域平台</string>
+    <string name="about_coryright_right">Copyright&#160;©&#160;2013&#160;&#8211;&#160;2014&#160;MyVip.Inc.&#160;All&#160;Rights&#160;Reserved.</string>
+    <string name="feedback_msg1">感谢使用,你可以通过以下方式帮助我们改善产品</string>
+    <string name="feedback_msg2">方法1</string>
+    <string name="feedback_msg3">方法2</string>
+    <string name="feedback_msg4">QQ 联系</string>
+    <string name="feedback_msg5">文字留言</string>
+    <string name="feedback_msg6">1115610638</string>
+    <string name="feedback_msg8">18038978228</string>
+    <string name="feedback_msg7">方法2</string>
+    <string name="feedback">发表评价</string>
+    <string name="feedback_emal">请留下您的联系方式</string>
+    <string name="saysomething">说点什么吧!你的反馈是我们最大的进步？</string>
+    <string name="keguanpingjia_">感谢您的反馈!</string>
+    <string name="suggest_one">给我们建议写下来,让我们更加努力</string>
+    <string name="suggest_two">写一些小建议吧!</string>
+    <string name="suggest_three">其他反馈路径:QQ:1115610638</string>
+    <string name="reaction_text">意见反馈</string>
+    <!-- end -->
+
+</resources>

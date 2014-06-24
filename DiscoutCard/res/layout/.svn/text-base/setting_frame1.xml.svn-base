@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.wheat.discountcard"
+    android:id="@+id/setting_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backguound"
+        android:orientation="vertical" >
+
+        <include layout="@layout/title_top_bar" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_mycollect"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/set_layou_height"
+                    android:layout_marginTop="15dip"
+                    android:background="@drawable/list_item_my_selector"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip" >
+
+                    <ImageView
+                        android:id="@+id/ico_del"
+                        android:layout_width="25dip"
+                        android:layout_height="25dip"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/fujin_dingwei" />
+
+                    <TextView
+                        style="@style/set_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:layout_toRightOf="@+id/ico_del"
+                        android:text="我的收藏" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/arrow_selector" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/clean_cache"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/set_layou_height"
+                    android:layout_marginTop="15dip"
+                    android:background="@drawable/list_item_my_selector"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip" >
+
+                    <ImageView
+                        android:id="@+id/ico_del"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ico_del" />
+
+                    <TextView
+                        style="@style/set_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:layout_toRightOf="@+id/ico_del"
+                        android:text="清除图片缓存" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="1.17M" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/detail_share_dark"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/set_layou_height"
+                    android:background="@drawable/list_item_my_selector"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip" >
+
+                    <ImageView
+                        android:id="@+id/detail_share_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/detail_share_dark" />
+
+                    <TextView
+                        style="@style/set_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dip"
+                        android:layout_toRightOf="@+id/detail_share_dark"
+                        android:text="横屏默认显示图片介绍" />
+
+                    <com.wheat.discountcard.ui.view.SwitchButton
+                        android:id="@+id/switch1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:minHeight="50dp"
+                        android:paddingRight="60dip"
+                        app:frameDrawable="@drawable/switch_frame"
+                        app:sliderDrawable="@drawable/selector_switch_slider"
+                        app:stateDrawable="@drawable/selector_switch_state"
+                        app:stateMaskDrawable="@drawable/switch_state_mask"
+                        app:withTextInterval="16dp" >
+                    </com.wheat.discountcard.ui.view.SwitchButton>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dip"
+                    android:text="切换为横屏状态时,默认图片描述显示为隐藏" />
+
+                <RelativeLayout
+                    android:id="@+id/detail_share_dark"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/set_layou_height"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/list_item_my_selector"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip" >
+
+                    <ImageView
+                        android:id="@+id/detail_share_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/detail_share_dark" />
+
+                    <TextView
+                        style="@style/set_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dip"
+                        android:layout_toRightOf="@+id/detail_share_dark"
+                        android:text="简体中文" />
+
+                    <com.wheat.discountcard.ui.view.SwitchButton
+                        android:id="@+id/switch1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:minHeight="50dp"
+                        android:paddingRight="60dip"
+                        app:frameDrawable="@drawable/switch_frame"
+                        app:sliderDrawable="@drawable/selector_switch_slider"
+                        app:stateDrawable="@drawable/selector_switch_state"
+                        app:stateMaskDrawable="@drawable/switch_state_mask"
+                        app:withTextInterval="16dp" >
+                    </com.wheat.discountcard.ui.view.SwitchButton>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/update_layou"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/set_layou_height"
+                    android:layout_marginTop="15dip"
+                    android:background="@drawable/list_item_my_selector"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip" >
+
+                    <ImageView
+                        android:id="@+id/ico_update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ico_update" />
+
+                    <TextView
+                        style="@style/set_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:layout_toRightOf="@+id/ico_update"
+                        android:text="检查更新" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/arrow_selector" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/about"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/set_layou_height"
+                    android:background="@drawable/list_item_my_selector"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip" >
+
+                    <ImageView
+                        android:id="@+id/ico_about"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ico_about" />
+
+                    <TextView
+                        style="@style/set_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dip"
+                        android:layout_toRightOf="@+id/ico_about"
+                        android:text="关于我们" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/arrow_selector" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

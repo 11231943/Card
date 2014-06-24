@@ -1,0 +1,54 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/menu_bg" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/radioMenu"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/home"
+                style="@style/menu_button"
+                android:drawableTop="@drawable/menu_home_selector"
+                android:text="@string/tab_home" />
+
+            <RadioButton
+                android:id="@+id/micro"
+                style="@style/menu_button"
+                android:drawableTop="@drawable/menu_tfaccount_selector"
+                android:text="@string/tab_micro_note" />
+
+            <RadioButton
+                android:id="@+id/info"
+                style="@style/menu_button"
+                android:drawableTop="@drawable/menu_account_selector"
+                android:text="@string/tab_account" />
+
+            <RadioButton
+                android:id="@+id/setting"
+                style="@style/menu_button"
+                android:drawableTop="@drawable/menu_set_selector"
+                android:text="@string/tab_set" />
+
+            <RadioButton
+                android:id="@+id/home_yhj"
+                style="@style/menu_button"
+                android:drawableTop="@drawable/menu_set_selector"
+                android:visibility="gone" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <cn.wheat.libs.widget.IndicateText android:id="@+id/msgCount" android:visibility="visible" android:text="100" style="@style/indicate_text" />
+
+</FrameLayout>

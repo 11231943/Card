@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="main_zone_type">
+        <item>全部</item>
+        <item>餐饮美食</item>
+        <item>休闲娱乐</item>
+        <item>住宿出现</item>
+        <item>都市丽人</item>
+        <item>生活服务</item>
+        <item>KTV</item>
+        <item>电影院</item>
+    </string-array>
+    
+     <string-array name="zone_type">
+        <item>全部</item>
+        <item>火锅</item>
+        <item>自助餐</item>
+        <item>西餐</item>
+        <item>小吃快餐</item>
+        <item>特色菜</item>
+    </string-array>
+    <string-array name="near">
+        <item>最热门</item>
+        <item>发布时间</item>
+        <item>距离最近</item>
+    </string-array>
+    <string-array name="micro_list">
+        <item>吐槽专区</item>
+        <item>美食专区</item>
+        <item>爱情专区</item>
+        <item>夜生活</item>
+        <item>男生专区</item>
+        <item>女生专区</item>
+        <item>同城交易</item>
+        <item>与我们交流</item>
+    </string-array>
+        <string-array name="micro_list_content">
+        <item>尽情来吐槽吧!</item>
+        <item>最近发现美食!</item>
+        <item>你敢秀爱情吗?</item>
+        <item>夜!夜!夜生活!</item>
+        <item>爱感情你我他?</item>
+        <item>你想成为女神?</item>
+        <item>赶集?58?同城?</item>
+        <item>客服是个mm哦!</item>
+    </string-array>
+
+</resources>
